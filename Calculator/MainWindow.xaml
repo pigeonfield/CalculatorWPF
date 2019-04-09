@@ -5,8 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Desktop Calculator" Height="600" Width="400">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="txtDisplay" IsReadOnly="True" TextAlignment="Right" 
+                 VerticalAlignment="Bottom" FontSize="30"
+                 BorderThickness="0" 
+        Grid.Row="0" Grid.ColumnSpan="4">0</TextBox>
+
+        <Button x:Name="btnClear" Grid.Row="1" Grid.Column="0">C</Button>
+        <Button x:Name="btnMinPlus" Grid.Row="1" Grid.Column="1">+/-</Button>
+        <Button x:Name="btnPercent" Grid.Row="1" Grid.Column="2">%</Button>
+
+        <Button x:Name="btn1" Grid.Row="2" Grid.Column="0">1</Button>
+        <Button x:Name="btn2" Grid.Row="2" Grid.Column="1">2</Button>
+        <Button x:Name="btn3" Grid.Row="2" Grid.Column="2">3</Button>
+
+        <Button x:Name="btn4" Grid.Row="3" Grid.Column="0">4</Button>
+        <Button x:Name="btn5" Grid.Row="3" Grid.Column="1">5</Button>
+        <Button x:Name="btn6" Grid.Row="3" Grid.Column="2">6</Button>
+
+        <Button x:Name="btn7" Grid.Row="4" Grid.Column="0">7</Button>
+        <Button x:Name="btn8" Grid.Row="4" Grid.Column="1">8</Button>
+        <Button x:Name="btn9" Grid.Row="4" Grid.Column="2">9</Button>
+
+        <Button x:Name="btnZero" Grid.Row="5" Grid.Column="0">0</Button>
+        <Button x:Name="btnDot" Grid.Row="5" Grid.Column="1">.</Button>
+        <Button x:Name="btnBackspace" Grid.Row="5" Grid.Column="2">X</Button>
+
+        <Button x:Name="btnPlus" Grid.Row="1" Grid.Column="3">+</Button>
+        <Button x:Name="btnMinus" Grid.Row="2" Grid.Column="3">-</Button>
+        <Button x:Name="btnMultiply" Grid.Row="3" Grid.Column="3">*</Button>
+        <Button x:Name="btnDivide" Grid.Row="4" Grid.Column="3">/</Button>
+        <Button x:Name="btnEqual" Grid.Row="5" Grid.Column="3">=</Button>
         
     </Grid>
 </Window>
